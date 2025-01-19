@@ -1,0 +1,54 @@
+﻿@model RegistrationPage.Models.CVViewModel
+@* @model List<RegistrationPage.Models.CVViewModel> *@
+
+<h1>Resume Dashboard</h1>
+
+<section>
+    <h3>Personal Information</h3>
+    <p><strong>Name :</strong> @Model.Name</p>
+    <p><strong>Email :</strong> @Model.Email</p>
+    <p><strong>Mobile Number :</strong> @Model.MobileNumber</p>
+    <p><strong>Gender :</strong> @Model.Gender</p>
+    <p><strong>Age :</strong> @Model.Age</p>
+    <p><strong>Skill :</strong> @Model.Skill</p>
+</section>
+
+<section>
+    <h3>Address Details</h3>
+    @foreach (var address in Model.Addresses)
+    {
+        <p><strong>Country :</strong> @address.CountryName</p>
+        <p><strong>District :</strong> @address.DistrictName</p>
+        <p><strong>Upazila :</strong> @address.UpazilaName</p>
+        <p><strong>Post Office :</strong> @address.PostOffice</p>
+        <p><strong>Village :</strong> @address.Village</p>
+        <hr />
+    }
+</section>
+
+<section>
+    <h3>Educational Qualifications</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Stage</th>
+                <th>Institution</th>
+                <th>Major Subject</th>
+                <th>Board</th>
+                <th>Year of Passing</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var eq in Model.EducationalQualifications)
+            {
+                <tr>
+                    <td>@eq.EducationalStage</td>
+                    <td>@eq.NameOfEducationalInstitution</td>
+                    <td>@eq.MajorSubject</td>
+                    <td>@eq.Board</td>
+                    <td>@eq.YearOfPassing</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</section>

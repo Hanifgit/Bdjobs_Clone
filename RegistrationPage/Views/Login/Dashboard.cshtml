@@ -1,0 +1,19 @@
+﻿@model RegistrationPage.Models.Entities.CreateAccount
+
+<h1>Welcome to Your Dashboard</h1>
+
+<section>
+    <h3>Profile Information</h3>
+    <p><strong>Name:</strong> @Model.Name</p>
+    <p><strong>Email:</strong> @Model.Email</p>
+    <p><strong>Mobile Number:</strong> @Model.MobileNumber</p>
+    <p><strong>Gender:</strong> @Model.Gender</p>
+    <p><strong>Age:</strong> @Model.Age</p>
+    <p><strong>Skill:</strong> @Model.Skill</p>
+</section>
+
+ <section>
+    <a asp-controller="CV" asp-action="ViewCV" asp-route-createAccountId="@Model.Id" class="btn btn-primary">View My CV</a>
+   @*  <a asp-controller="Login" asp-action="Logout" class="btn btn-danger">Logout</a>    *@
+</section>
+ 
