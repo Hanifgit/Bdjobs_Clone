@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
+//using static RegistrationPage.Models.EmployerDashboardViewModel;
 
 namespace RegistrationPage.Models
 {
@@ -15,7 +16,7 @@ namespace RegistrationPage.Models
         public string Password { get; set; }
 
         // Address fields
-        
+       
         public string PostOffice { get; set; }
         public string Village { get; set; }
 
@@ -32,6 +33,7 @@ namespace RegistrationPage.Models
         // Educational Qualifications fields
 
         public List<EducationalQualificationViewModel> EducationalQualifications { get; set; }
+
     }
    
 }

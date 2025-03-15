@@ -1,0 +1,87 @@
+﻿@model RegistrationPage.Models.Entities.Employer
+
+@{
+    ViewData["Title"] = "EmployerDelete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>EmployerDelete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Employer</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Username)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Username)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CompanyName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CompanyName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.YearOfEstablishment)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.YearOfEstablishment)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CompanySize)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CompanySize)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.IndustryType)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IndustryType)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ContactPersonName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ContactPersonName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ContactPersonDesignation)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ContactPersonDesignation)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ContactPersonEmail)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ContactPersonEmail)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ContactPersonPhone)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ContactPersonPhone)
+        </dd>
+    </dl>
+    
+   @*  <form asp-action="EmployerDelete" method="post">
+        <input type="hidden" name="Id" value="@Model.Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" />
+        <a asp-action="EmployerDashboard" class="btn btn-warning" >Cancel</a>
+    </form> *@
+    <form asp-action="EmployerDelete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="EmployerDashboard" class="btn btn-warning">Cancel</a>
+    </form>
+</div>

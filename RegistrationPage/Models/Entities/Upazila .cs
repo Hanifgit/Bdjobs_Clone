@@ -6,5 +6,6 @@
         public int DistrictId { get; set; }
         public virtual District District { get; set; }
         public virtual ICollection<Address> Addresses { get; set; }
+        public virtual ICollection<EmployerAddress> EmployerAddresses { get; set; }
     }
 }

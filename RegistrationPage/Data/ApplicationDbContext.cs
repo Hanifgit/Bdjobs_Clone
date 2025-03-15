@@ -15,6 +15,11 @@ namespace RegistrationPage.Data
         public DbSet<Country> Countries { get; set; }
         public DbSet<District> Districts { get; set; }
         public DbSet<Upazila> Upazilas { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Employer> Employers { get; set; }
+        public DbSet<EmployerAddress> EmployerAddresses { get; set;}
+        public DbSet<JobPost> JobPosts { get; set; }
+        public DbSet<Application> Applications { get; set; }
        
 
 

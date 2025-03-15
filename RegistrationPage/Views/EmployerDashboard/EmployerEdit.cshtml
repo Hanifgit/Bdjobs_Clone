@@ -1,0 +1,270 @@
+﻿@model RegistrationPage.Models.EmployerDashboardViewModel
+
+@{
+    ViewData["Title"] = "Edit Employer";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 class="text-primary">Edit Employer</h2>
+<hr />
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="EmployerEdit" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+
+            <div class="form-group">
+                <label asp-for="Username" class="control-label"></label>
+                <input asp-for="Username" class="form-control" />
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password"  class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+          @*   <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" type="password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div> *@
+
+            <div class="form-group">
+                <label asp-for="CompanyName" class="control-label"></label>
+                <input asp-for="CompanyName" class="form-control" />
+                <span asp-validation-for="CompanyName" class="text-danger"></span>
+            </div>
+
+           @*  <div class="form-group">
+                <label asp-for="YearOfEstablishment" class="control-label"></label>
+                <input asp-for="YearOfEstablishment" class="form-control" />
+                <span asp-validation-for="YearOfEstablishment" class="text-danger"></span>
+            </div> *@
+
+            <div class="form-group">
+                <label>Year Of Establishment</label>
+                <select asp-for="YearOfEstablishment" asp-items="Model.YearDropdown" class="form-control">
+                    <option value="">-- Select Year --</option>
+                </select>
+            </div> 
+
+            <div class="form-group">
+                <label asp-for="CompanySize" class="control-label"></label>
+                <input asp-for="CompanySize" class="form-control" />
+                <span asp-validation-for="CompanySize" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="IndustryType" class="control-label"></label>
+                <input asp-for="IndustryType" class="form-control" />
+                <span asp-validation-for="IndustryType" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ContactPersonName" class="control-label"></label>
+                <input asp-for="ContactPersonName" class="form-control" />
+                <span asp-validation-for="ContactPersonName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ContactPersonDesignation" class="control-label"></label>
+                <input asp-for="ContactPersonDesignation" class="form-control" />
+                <span asp-validation-for="ContactPersonDesignation" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ContactPersonEmail" class="control-label"></label>
+                <input asp-for="ContactPersonEmail" class="form-control" />
+                <span asp-validation-for="ContactPersonEmail" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ContactPersonPhone" class="control-label"></label>
+                <input asp-for="ContactPersonPhone" class="form-control" />
+                <span asp-validation-for="ContactPersonPhone" class="text-danger"></span>
+            </div>
+
+            <h5 class="mt-4">Company Address</h5>
+
+            @if (Model.EmployerAddresses != null && Model.EmployerAddresses.Any())
+            {
+                for (int i = 0; i < Model.EmployerAddresses.Count; i++)
+                {
+                    var address = Model.EmployerAddresses[i];
+
+                    <input type="hidden" name="EmployerAddresses[@i].Id" value="@address.Id" />
+
+                    <div class="form-group">
+                        <label>Country</label>
+                        <select name="EmployerAddresses[@i].CountryId" class="form-control country-dropdown"
+                                data-address-index="@i"
+                                asp-items="ViewBag.Countries">
+                            <option value="">-- Select Country --</option>
+                        </select>
+                        <span class="text-danger">@Html.ValidationMessage("EmployerAddresses[@i].CountryId")</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>District</label>
+                        <select name="EmployerAddresses[@i].DistrictId" class="form-control district-dropdown"
+                                data-address-index="@i"
+                                asp-items="ViewBag.Districts">
+                            <option value="">-- Select District --</option>
+                        </select>
+                        <span class="text-danger">@Html.ValidationMessage("EmployerAddresses[@i].DistrictId")</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Upazila</label>
+                        <select name="EmployerAddresses[@i].UpazilaId" class="form-control upazila-dropdown"
+                                data-address-index="@i"
+                                asp-items="ViewBag.Upazilas">
+                            <option value="">-- Select Upazila --</option>
+                        </select>
+                        <span class="text-danger">@Html.ValidationMessage("EmployerAddresses[@i].UpazilaId")</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Company Address</label>
+                        <input type="text" name="EmployerAddresses[0].CompanyAddress" value="@address.CompanyAddress" class="form-control" />
+                        <span class="text-danger">@Html.ValidationMessage("EmployerAddresses[0].CompanyAddress")</span>
+                    </div>
+
+                }
+            }
+
+           @*  @if (Model.EmployerAddresses != null && Model.EmployerAddresses.Any())
+            {
+                var address = Model.EmployerAddresses.First(); // Assuming one address per employer
+
+                <input type="hidden" name="EmployerAddresses[0].Id" value="@address.Id" />
+
+                <div class="form-group">
+                    <label>Country</label>
+                    <select name="EmployerAddresses[0].CountryId" class="form-control" asp-items="ViewBag.Countries">
+                        <option value="">-- Select Country --</option>
+                    </select>
+                    <span class="text-danger">@Html.ValidationMessage("EmployerAddresses[0].CountryId")</span>
+                </div>
+
+                <div class="form-group">
+                    <label>District</label>
+                    <select name="EmployerAddresses[0].DistrictId" class="form-control" asp-items="ViewBag.Districts">
+                        <option value="">-- Select District --</option>
+                    </select>
+                    <span class="text-danger">@Html.ValidationMessage("EmployerAddresses[0].DistrictId")</span>
+                </div>
+
+                <div class="form-group">
+                    <label>Upazila</label>
+                    <select name="EmployerAddresses[0].UpazilaId" class="form-control" asp-items="ViewBag.Upazilas">
+                        <option value="">-- Select Upazila --</option>
+                    </select>
+                    <span class="text-danger">@Html.ValidationMessage("EmployerAddresses[0].UpazilaId")</span>
+                </div>
+
+                <div class="form-group">
+                    <label>Company Address</label>
+                    <input type="text" name="EmployerAddresses[0].CompanyAddress" value="@address.CompanyAddress" class="form-control" />
+                    <span class="text-danger">@Html.ValidationMessage("EmployerAddresses[0].CompanyAddress")</span>
+                </div>
+            }
+            else
+            {
+                <p class="text-warning">No Address Found.</p>
+            }
+            *@
+            <div class="form-group mt-3">
+                <input type="submit" value="Save Changes" class="btn btn-primary" />
+                <a asp-action="EmployerDashboard" class="btn btn-warning">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+
+            function loadDistricts(countryId, districtDropdown, selectedDistrictId) {
+                if (countryId) {
+                    $.getJSON('/EmployerDashboard/GetDistrictsByCountry', { countryId: countryId }, function (data) {
+                        districtDropdown.empty().append('<option value="">-- Select District --</option>');
+                        $.each(data, function (i, district) {
+                            districtDropdown.append('<option value="' + district.id + '">' + district.name + '</option>');
+                        });
+                        if (selectedDistrictId) {
+                            districtDropdown.val(selectedDistrictId);
+                        }
+                    });
+                }
+            }
+
+            function loadUpazilas(districtId, upazilaDropdown, selectedUpazilaId) {
+                if (districtId) {
+                    $.getJSON('/EmployerDashboard/GetUpazilasByDistrict', { districtId: districtId }, function (data) {
+                        upazilaDropdown.empty().append('<option value="">-- Select Upazila --</option>');
+                        $.each(data, function (i, upazila) {
+                            upazilaDropdown.append('<option value="' + upazila.id + '">' + upazila.name + '</option>');
+                        });
+                        if (selectedUpazilaId) {
+                            upazilaDropdown.val(selectedUpazilaId);
+                        }
+                    });
+                }
+            }
+
+            // Handle country change
+            $('.country-dropdown').change(function () {
+                var countryId = $(this).val();
+                var index = $(this).data("address-index");
+                var districtDropdown = $('.district-dropdown[data-address-index="' + index + '"]');
+                var upazilaDropdown = $('.upazila-dropdown[data-address-index="' + index + '"]');
+
+                districtDropdown.empty().append('<option value="">-- Select District --</option>');
+                upazilaDropdown.empty().append('<option value="">-- Select Upazila --</option>');
+
+                if (countryId) {
+                    loadDistricts(countryId, districtDropdown);
+                }
+            });
+
+            // Handle district change
+            $('.district-dropdown').change(function () {
+                var districtId = $(this).val();
+                var index = $(this).data("address-index");
+                var upazilaDropdown = $('.upazila-dropdown[data-address-index="' + index + '"]');
+
+                upazilaDropdown.empty().append('<option value="">-- Select Upazila --</option>');
+
+                if (districtId) {
+                    loadUpazilas(districtId, upazilaDropdown);
+                }
+            });
+
+            // Preload districts and upazilas when the page loads
+            $('.country-dropdown').each(function () {
+                var index = $(this).data("address-index");
+                var countryId = $(this).val();
+                var districtDropdown = $('.district-dropdown[data-address-index="' + index + '"]');
+                var upazilaDropdown = $('.upazila-dropdown[data-address-index="' + index + '"]');
+                var selectedDistrictId = districtDropdown.val();
+                var selectedUpazilaId = upazilaDropdown.val();
+
+                if (countryId && selectedDistrictId) {
+                    loadDistricts(countryId, districtDropdown, selectedDistrictId);
+                }
+
+                if (selectedDistrictId && selectedUpazilaId) {
+                    loadUpazilas(selectedDistrictId, upazilaDropdown, selectedUpazilaId);
+                }
+            });
+
+        });
+    </script>
+}

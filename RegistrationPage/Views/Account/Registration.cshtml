@@ -91,9 +91,9 @@
                 </div>
             </div>
 
-            <div class="form-section">
+             <div class="form-section">
                 <h3>Address Information</h3>
-                <div class="form-group">
+                @* <div class="form-group">
                     <label>Country</label>
                     <select id="CountryId" name="SelectedCountry" asp-items="Model.Countries" class="form-control">
                         <option value="">-- Select Country --</option>
@@ -110,7 +110,35 @@
                     <select id="UpazilaId" name="SelectedUpazila" asp-items="Model.Upazilas" class="form-control">
                         <option value="">-- Select Upazila --</option>
                     </select>
+                </div>  *@
+
+                <div class="form-group">
+                    <label for="SelectedCountry">Country</label>
+                    <select id="SelectedCountry" name="SelectedCountry" class="form-control">
+                        <option value="">-- Select Country --</option>
+                        @foreach (var country in Model.Countries)
+
+                        {
+                            <option value="@country.Value">@country.Text</option>
+                        }
+                    </select>
                 </div>
+
+                <div class="form-group">
+                    <label for="SelectedDistrict">District</label>
+                    <select id="SelectedDistrict" name="SelectedDistrict" class="form-control">
+                        <option value="">-- Select District --</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="SelectedUpazila">Upazila</label>
+                    <select id="SelectedUpazila" name="SelectedUpazila" class="form-control">
+                        <option value="">-- Select Upazila --</option>
+                    </select>
+                </div>
+
+
                 <div class="form-group">
                     <label>Post Office</label>
                     <input asp-for="PostOffice" class="form-control" placeholder="Enter post office" />
@@ -154,116 +182,47 @@
             </div>
 
             <button type="submit" class="btn btn-primary">Register</button>
+          
         </form>
     </div>
 </body>
 </html>
 
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#SelectedCountry").change(function () {
+            var countryId = $(this).val();
+            $("#SelectedDistrict").empty().append('<option value="">-- Select District --</option>');
+            $("#SelectedUpazila").empty().append('<option value="">-- Select Upazila --</option>');
 
-@* @model RegistrationPage.Models.RegistrationViewModel
+            if (countryId) {
+                $.getJSON("/Account/GetDistrictsByCountry", { countryId: countryId }, function (data) {
+                    $.each(data, function (index, item) {
+                        $("#SelectedDistrict").append($('<option>', {
+                            value: item.id,
+                            text: item.name
+                        }));
+                    });
+                });
+            }
+        });
 
-<h2>Create Account</h2>
-<form asp-action="Registration" method="post">
-    <h3>Personal Information</h3>
-    <div>
-        <label>Name</label>
-        <input asp-for="Name" class="form-control" />
-    </div>
-    <div>
-        <label>Email</label>
-        <input asp-for="Email" class="form-control" />
-    </div>
-    <div>
-        <label>Mobile Number</label>
-        <input asp-for="MobileNumber" class="form-control" />
-    </div>
-    
-    <div class="form-group">
-        <label>Gender</label><br />
-        <input type="radio" id="genderMale" name="Gender" value="Male" asp-for="Gender" checked />
-        <label for="genderMale">Male</label><br />
+        $("#SelectedDistrict").change(function () {
+            var districtId = $(this).val();
+            $("#SelectedUpazila").empty().append('<option value="">-- Select Upazila --</option>');
 
-        <input type="radio" id="genderFemale" name="Gender" value="Female" asp-for="Gender" />
-        <label for="genderFemale">Female</label>
-    </div>
+            if (districtId) {
+                $.getJSON("/Account/GetUpazilasByDistrict", { districtId: districtId }, function (data) {
+                    $.each(data, function (index, item) {
+                        $("#SelectedUpazila").append($('<option>', {
+                            value: item.id,
+                            text: item.name
+                        }));
+                    });
+                });
+            }
+        });
+    });
+</script>
 
-
-    <div>
-        <label>Age</label>
-        <input asp-for="Age" class="form-control" />
-    </div>
-    <div>
-        <label>Skill</label>
-        <input asp-for="Skill" class="form-control" /> 
-    </div>
-   
-
-    <div>
-        <label>Password</label>
-        <input asp-for="Password" type="password" class="form-control" />
-    </div>
-
-    <h3>Address Information</h3>
-
-    <div>
-        <label>Country</label>
-        <select id="CountryId" name="SelectedCountry" asp-items="Model.Countries" class="form-control">
-            <option value="">-- Select Country --</option>
-        </select>
-    </div>
-
-    <div>
-        <label>District</label>
-        <select id="DistrictId" name="SelectedDistrict" asp-items="Model.Districts" class="form-control">
-            <option value="">-- Select District --</option>
-        </select>
-    </div>
-
-    <div>
-        <label>Upazila</label>
-        <select id="UpazilaId" name="SelectedUpazila" asp-items="Model.Upazilas" class="form-control">
-            <option value="">-- Select Upazila --</option>
-        </select>
-    </div>
-
-
-    <div>
-        <label>Post Office</label>
-        <input asp-for="PostOffice" class="form-control" />
-    </div>
-     <div>
-        <label>House No./Road /Village</label>
-        <input asp-for="Village" class="form-control" />
-    </div>
-
-   
-
-    <h3>Educational Qualifications</h3>
-    <div id="educational-qualifications-section">
-        @for (int i = 0; i < Model.EducationalQualifications.Count; i++)
-
-        {
-            <div>
-                <label>Educational Stage</label>
-                <input asp-for="EducationalQualifications[@i].EducationalStage" class="form-control" />
-                <label>Name of Institution</label>
-                <input asp-for="EducationalQualifications[@i].NameOfEducationalInstitution" class="form-control" />
-                <label>Major Subject</label>
-                <input asp-for="EducationalQualifications[@i].MajorSubject" class="form-control" />
-                <label>Board</label>
-                <input asp-for="EducationalQualifications[@i].Board" class="form-control" />
-               
-                <label>Year of Passing</label>
-                <select asp-for="EducationalQualifications[@i].YearOfPassing" asp-items="Model.EducationalQualifications[@i].YearDropdown" class="form-control">
-                    <option value="">-- Select Year --</option>
-                </select>
-
-
-            </div>
-        }
-    </div>
-    
-    <button type="submit" class="btn btn-primary">Register</button>
-</form>
-
- *@

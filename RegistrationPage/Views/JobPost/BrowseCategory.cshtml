@@ -1,0 +1,33 @@
+﻿@model IEnumerable<JobPostViewModel>
+
+<h2>Job Category</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Job Title</th>
+            <th>Category</th>
+            <th>Vacancy</th>
+            <th>Company Name</th>
+            <th>Application Deadline</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var job in Model)
+        {
+            <tr>
+                <td>@job.JobTitle</td>
+                <td>@job.CategoryName</td>
+                <td>@job.Vacancy</td>
+                <td>@job.CompanyName</td>
+                <td>@job.ApplicationDeadline.ToString("dd MMMM yyyy")</td>
+                <td>
+                    <a asp-action="JobDetails" asp-route-id="@job.Id" class="btn btn-info">Details</a> 
+                   @*  <a asp-action="JobEdit" asp-route-id="@job.Id" class="btn btn-warning">Edit</a> |
+                    <a asp-action="JobDelete" asp-route-id="@job.Id" class="btn btn-danger">Delete</a> *@
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

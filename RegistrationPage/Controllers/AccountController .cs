@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.CodeAnalysis.Scripting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using RegistrationPage.Data;
@@ -8,6 +9,8 @@ using RegistrationPage.Models.Entities;
 using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Net;
+using System.Security.Principal;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace RegistrationPage.Controllers
 {
@@ -19,7 +22,6 @@ namespace RegistrationPage.Controllers
         {
             this.dbContext = dbContext;
         }
-      
 
         [HttpGet]
         public IActionResult AddCountry()
@@ -36,8 +38,8 @@ namespace RegistrationPage.Controllers
                     Name = viewModel.Name,
                    
                 };
-                 dbContext.Countries.Add(country);
-                 dbContext.SaveChanges();
+                dbContext.Countries.Add(country);
+                dbContext.SaveChanges();
             }
             return View();
         }
@@ -89,32 +91,6 @@ namespace RegistrationPage.Controllers
             return View();
         }
 
-        //[HttpGet]
-
-        //public IActionResult Registration()
-        //{
-        //    //ViewData["CountryId"] = new SelectList(dbContext.Countries, "Id", "Name");
-        //    //ViewData["DistrictId"] = new SelectList(dbContext.Districts, "Id", "Name");
-        //    //ViewData["UpazilaId"] = new SelectList(dbContext.Upazilas, "Id", "Name");
-
-
-        //    ViewData["CountryId"] = new SelectList(dbContext.Countries, "Id", "Name");
-        //    ViewData["DistrictId"] = new SelectList(dbContext.Districts, "Id", "Name");
-        //    ViewData["UpazilaId"] = new SelectList(dbContext.Upazilas, "Id", "Name");
-
-        //    var model = new RegistrationViewModel
-        //    {
-
-        //        EducationalQualifications = new List<EducationalQualificationViewModel>
-        //        {
-        //            new EducationalQualificationViewModel()
-        //        }
-
-        //    };
-
-        //    return View(model);
-        //}
-
         [HttpGet]
         public IActionResult Registration()
         {
@@ -130,29 +106,38 @@ namespace RegistrationPage.Controllers
                 }).ToList();
 
 
+            //var model = new RegistrationViewModel
+            //{
+
+            //    Countries = dbContext.Countries
+            //        .Select(c => new SelectListItem
+            //        {
+            //            Value = c.Id.ToString(),
+            //            Text = c.Name
+            //        }).ToList(),
+
+            //    Districts = dbContext.Districts.Select(d => new SelectListItem
+            //    {
+            //        Value = d.Id.ToString(),
+            //        Text = d.Name
+            //    }).ToList(),
+
+            //    Upazilas = dbContext.Upazilas.Select(u => new SelectListItem
+            //    {
+            //        Value = u.Id.ToString(),
+            //        Text = u.Name
+            //    }).ToList(),
+
             var model = new RegistrationViewModel
             {
-                
                 Countries = dbContext.Countries
-                    .Select(c => new SelectListItem
-                    {
-                        Value = c.Id.ToString(),
-                        Text = c.Name
-                    }).ToList(),
-
-                Districts = dbContext.Districts.Select(d => new SelectListItem
-                {
-                    Value = d.Id.ToString(),
-                    Text = d.Name
-                }).ToList(),
-                
-                Upazilas = dbContext.Upazilas.Select(u => new SelectListItem
-                {
-                    Value = u.Id.ToString(),
-                    Text = u.Name
-                }).ToList(),
-
-               
+                  .Select(c => new SelectListItem
+                  {
+                      Value = c.Id.ToString(),
+                      Text = c.Name
+                  }).ToList(),
+                Districts = new List<SelectListItem>(), // Empty initially
+                Upazilas = new List<SelectListItem>(), // Empty initially  
 
 
                 EducationalQualifications = new List<EducationalQualificationViewModel>
@@ -243,14 +228,7 @@ namespace RegistrationPage.Controllers
                 dbContext.Addresses.Add(address);
                 dbContext.SaveChanges();
 
-                //// Step Link CreateAccount and Address through CreateAccountAddress
-                //var createAccountAddress = new CreateAccountAddress
-                //{
-                //    CreateAccountId = createAccount.Id,
-                //    AddressId = address.Id
-                //};
-                //dbContext.CreateAccountAddresses.Add(createAccountAddress);
-
+               
                //  Save Educational Qualifications
                 var educationalQualifications = model.EducationalQualifications.Select(eq => new EducationalQualification
                 {
@@ -267,13 +245,37 @@ namespace RegistrationPage.Controllers
                 dbContext.EducationalQualifications.AddRange(educationalQualifications);
                 dbContext.SaveChanges();
 
-                return RedirectToAction("Registration");
+                HttpContext.Session.SetInt32("CreateAccountId", createAccount.Id);
+                HttpContext.Session.SetString("UserName", createAccount.Name);
+
+                return RedirectToAction("MyJobDashboard", "CreateAccountDashboard");
             }
 
             return View(model);
         }
 
+        [HttpGet]
+        public JsonResult GetDistrictsByCountry(int countryId)
+        {
+            var districts = dbContext.Districts
+                .Where(d => d.CountryId == countryId)
+                .Select(d => new { d.Id, d.Name })
+                .ToList();
 
+            return Json(districts);
+        }
+
+        [HttpGet]
+        public JsonResult GetUpazilasByDistrict(int districtId)
+        {
+            var upazilas = dbContext.Upazilas
+                .Where(u => u.DistrictId == districtId)
+                .Select(u => new { u.Id, u.Name })
+                .ToList();
+
+            return Json(upazilas);
+        }
     }
-
 }
+
+

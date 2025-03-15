@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - RegistrationPage</title>
+   @*  <title>@ViewData["Title"] - RegistrationPage</title> *@
+    <title>@ViewData["Title"] - JobPortal in Bangladesh</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/RegistrationPage.styles.css" asp-append-version="true" />
@@ -12,7 +13,10 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">RegistrationPage</a>
+               @*  <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">RegistrationPage</a> *@
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">JobPortal BD</a>
+               @*  <a class="navbar-brand" href="#">JobPortal BD</a> *@
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -25,36 +29,79 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
-                       
                        @*  <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="CV" asp-action="ViewCV" asp-route-createAccountId="47">My CV</a>
+                            <a class="nav-link" asp-controller="JobPost" asp-action="BrowseCategory">Browse Category</a>
                         </li> *@
-                        @* @if (Context.Session.GetInt32("UserId") != null)
-                        {
-                            <li><a asp-controller="Login" asp-action="Logout">Logout</a></li>
-                        }
-                        else
-                        {
-                            <li><a asp-controller="Login" asp-action="Login">Login</a></li>
-                        } *@
-
-                        @if (Context.Session.GetInt32("UserId") != null)
+                        @if (Context.Session.GetInt32("CreateAccountId") != null)
                         {
                             <li class="nav-item">
-                                <a class="nav-link" asp-controller="Login" asp-action="Dashboard">Dashboard</a>
+                                <a class="nav-link" asp-controller="CreateAccountDashboard" asp-action="MyJobDashboard">Dashboard</a>
                             </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="JobPost" asp-action="BrowseCategory">Browse Category</a>
+                            </li>
+
                             <li class="nav-item">
                                 <a class="nav-link" asp-controller="Login" asp-action="Logout">Logout</a>
                             </li>
                         }
+                        else if (Context.Session.GetInt32("EmployerId") != null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="EmployerDashboard" asp-action="EmployerDashboard">Employer Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="JobPost" asp-action="JobCreate">Job Post</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="EmployerLogin" asp-action="EmployerLogout">Logout</a>
+                            </li>
+                        }
                         else
                         {
                             <li class="nav-item">
-                                <a class="nav-link" asp-controller="Login" asp-action="Login">Login</a>
+                                <a class="nav-link" asp-controller="Login" asp-action="Login"> Job Seeker Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="EmployerLogin" asp-action="EmployerLogin">Employer Login</a>
                             </li>
                         }
 
+                       @*  @if (Context.Session.GetInt32("UserId") != null)
+                        
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-controller="Login" asp-action="Dashboard">Dashboard</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-controller="Login" asp-action="Logout">Logout</a>
+                                </li>
+                            }
+                                    else
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-controller="Login" asp-action="Login"> Job Seeker Login</a>
+                                </li>
+                            }
+    
 
+                        @if (Context.Session.GetInt32("EmployerUserId") != null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="EmployerLogin" asp-action="EmployerDashboard">Employer Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="EmployerLogin" asp-action="EmployerLogout">Logout</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li>
+                                <a class="nav-link" asp-controller="EmployerLogin" asp-action="EmployerLogin">Employer Login</a>
+                            </li>
+                        } *@
+                        
 
                     </ul>
                 </div>

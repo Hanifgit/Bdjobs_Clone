@@ -19,10 +19,21 @@ namespace RegistrationPage.Controllers
         [HttpGet]
         public IActionResult ViewCV(int createAccountId)
         {
+            // This Code using "Back Button" Back to Applicant
+            int? employerId = HttpContext.Session.GetInt32("EmployerId");
+            if(employerId != null)
+            {
+                ViewBag.IsEmployer = true;
+            }
+            else
+            {
+                ViewBag.IsEmployer = false;
+            }
+
             // Retrieve CreateAccount data from the database
             var account = dbContext.CreateAccounts
-                .Include(a => a.Addresses) // Include Address data
-                .Include(a => a.EducationalQualifications) // Include Educational Qualification data
+                .Include(a => a.Addresses) 
+                .Include(a => a.EducationalQualifications) 
                 .FirstOrDefault(a => a.Id == createAccountId);
 
             if (account == null)
@@ -39,7 +50,7 @@ namespace RegistrationPage.Controllers
                 Gender = account.Gender,
                 Age = account.Age,
                 Skill = account.Skill,
-                Addresses = account.Addresses.Select(a => new AddressViewModel
+                Addresses = account.Addresses.Select(a => new CVAddressViewModel
                 {
                     CountryName = dbContext.Countries.FirstOrDefault(c => c.Id == a.CountryId)?.Name,
                     DistrictName = dbContext.Districts.FirstOrDefault(d => d.Id == a.DistrictId)?.Name,

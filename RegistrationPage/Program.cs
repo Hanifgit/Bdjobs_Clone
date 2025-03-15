@@ -3,6 +3,13 @@ using RegistrationPage.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// This ensures that Razor views can access session data CreateAccountId pass to view page  
+builder.Services.AddHttpContextAccessor();
+
+// JobCleanupService er jonno eita use kora hoi
+builder.Services.AddHostedService<JobCleanupService>();
+
+
 // Add session suport
 builder.Services.AddSession();
 builder.Services.AddControllersWithViews();

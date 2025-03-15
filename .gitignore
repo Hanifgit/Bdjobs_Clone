@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/BdjobsClone/FileContentIndex/00951c96-719b-4b01-878b-824825ff8657.vsidx
+*.vsidx
+/.vs/RegistrationPage/FileContentIndex/4c62ec6b-fb87-4757-8dcf-4b23de7ab17c.vsidx
+/.vs/RegistrationPage/FileContentIndex/86219c54-7611-4c37-9c5d-79b139308e0b.vsidx
+/.vs/RegistrationPage/FileContentIndex/4c62ec6b-fb87-4757-8dcf-4b23de7ab17c.vsidx
+*.cache
+*.cs
+/RegistrationPage/obj/Debug/net8.0/RegistrationPage.pdb
+/RegistrationPage/obj/Debug/net8.0/RegistrationPage.AssemblyInfoInputs.cache
+/RegistrationPage/obj/RegistrationPage.csproj.nuget.dgspec.json

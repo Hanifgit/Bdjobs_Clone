@@ -1,0 +1,107 @@
+﻿@model RegistrationPage.Models.JobPostViewModel
+
+
+<h2>Post a Job</h2>
+
+<form asp-action="JobCreate" method="post">
+    <div class="form-group">
+        <label class="fw-bold" asp-for="JobTitle">Job Title</label>
+        <input asp-for="JobTitle" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label class="fw-bold" asp-for="Vacancy">Vacancy</label>
+        <input asp-for="Vacancy" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label class="fw-bold" asp-for="CategoryId">Category</label>
+        <select asp-for="CategoryId" asp-items="ViewBag.Categories" class="form-control" required>
+            <option value="">-- Select Category --</option>
+        </select>
+    </div>
+
+
+    <div class="form-group">
+        <label class="fw-bold" asp-for="EducationRequirement">Education Requirement</label>
+        <textarea asp-for="EducationRequirement" class="form-control"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label class="fw-bold" asp-for="ExperienceRequirement">Experience Requirement</label>
+        <textarea asp-for="ExperienceRequirement" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label class="fw-bold" asp-for="AdditionalRequirement">Additional Requirement</label>
+        <textarea asp-for="AdditionalRequirement" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label class="fw-bold" asp-for="Responsibilitie">Responsibilitie</label>
+        <textarea asp-for="Responsibilitie" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label class="fw-bold" asp-for="OtherBenefit">Other Benefit</label>
+        <textarea asp-for="OtherBenefit" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <label class="fw-bold">Workplace</label>
+        <div class="d-flex">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="Workplace" value="Remote" id="remote" required>
+                <label class="form-check-label" for="remote">Remote</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="Workplace" value="On-site" id="onsite">
+                <label class="form-check-label" for="onsite">On-site</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="Workplace" value="Hybrid" id="hybrid">
+                <label class="form-check-label" for="hybrid">Hybrid</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="fw-bold" asp-for="JobLocation">Job Location</label>
+        <input asp-for="JobLocation" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label class="fw-bold">Employment Status</label>
+        <div class="btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-outline-primary">
+                <input type="radio" name="EmploymentStatus" value="Full Time"> Full Time
+            </label>
+            <label class="btn btn-outline-primary">
+                <input type="radio" name="EmploymentStatus" value="Part Time"> Part Time
+            </label>
+            <label class="btn btn-outline-primary">
+                <input type="radio" name="EmploymentStatus" value="Internship"> Internship
+            </label>
+        </div>
+    </div>
+
+   
+         <div class="form-group">
+            <label class="fw-bold">Salary <span class="text-danger">*</span></label>
+            <div class="d-flex align-items-center">
+                <input type="text" id="salaryInput" class="form-control w-25" name="Salary" placeholder="Enter Salary">
+                <span class="ms-2">Monthly</span>
+            </div>
+        </div>
+    
+    <div class="form-group">
+        <label class="fw-bold" asp-for="JobPostedDate">Job Posted Date</label>
+        <input asp-for="JobPostedDate" type="date" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label class="fw-bold" asp-for="ApplicationDeadline">Application Deadline</label>
+        <input asp-for="ApplicationDeadline" type="date" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Post Job</button>
+</form>
+
+
+ 
+ 

@@ -1,118 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Registration Page Project\\RegistrationPage\\",
+  "WorkspaceRootPath": "D:\\BdjobsClone\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\models\\entities\\educationalqualification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\models\\entities\\educationalqualification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\bdjobsclone\\registrationpage\\controllers\\jobpostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\controllers\\jobpostcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\models\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\models\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\bdjobsclone\\registrationpage\\controllers\\employeraccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\controllers\\employeraccountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\models\\entities\\createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\models\\entities\\createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\bdjobsclone\\registrationpage\\views\\jobpost\\jobcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\views\\jobpost\\jobcreate.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\controllers\\accountcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\controllers\\accountcontroller .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\bdjobsclone\\registrationpage\\views\\employeraccount\\employerregistration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\views\\employeraccount\\employerregistration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\views\\account\\registration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\views\\account\\registration.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\controllers\\cvcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\controllers\\cvcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\views\\login\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\views\\login\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\views\\cv\\viewcv.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\views\\cv\\viewcv.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\models\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\models\\registrationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\models\\registrationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\models\\addressviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\models\\addressviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\models\\educationalqualificationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\models\\educationalqualificationviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\bdjobsclone\\registrationpage\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\models\\cvviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\models\\cvviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\bdjobsclone\\registrationpage\\models\\entities\\jobpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\models\\entities\\jobpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\views\\account\\addcountry.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\views\\account\\addcountry.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\models\\addcountryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\models\\addcountryviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\models\\entities\\district.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\models\\entities\\district.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\models\\entities\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\models\\entities\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\views\\account\\addupazila.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\views\\account\\addupazila.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\models\\entities\\upazila .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\models\\entities\\upazila .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\models\\adddistrictviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\models\\adddistrictviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\models\\addupazilaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\models\\addupazilaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\views\\account\\adddistrict.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\views\\account\\adddistrict.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\registration page project\\registrationpage\\registrationpage\\models\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\models\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|d:\\bdjobsclone\\registrationpage\\models\\entities\\employer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8B392A2-874A-4A97-8818-116B532CFF86}|RegistrationPage\\RegistrationPage.csproj|solutionrelative:registrationpage\\models\\entities\\employer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -122,349 +38,92 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 23,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Views\\Login\\Dashboard.cshtml",
-              "RelativeDocumentMoniker": "RegistrationPage\\Views\\Login\\Dashboard.cshtml",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Views\\Login\\Dashboard.cshtml",
-              "RelativeToolTip": "RegistrationPage\\Views\\Login\\Dashboard.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "JobCreate.cshtml",
+              "DocumentMoniker": "D:\\BdjobsClone\\RegistrationPage\\Views\\JobPost\\JobCreate.cshtml",
+              "RelativeDocumentMoniker": "RegistrationPage\\Views\\JobPost\\JobCreate.cshtml",
+              "ToolTip": "D:\\BdjobsClone\\RegistrationPage\\Views\\JobPost\\JobCreate.cshtml",
+              "RelativeToolTip": "RegistrationPage\\Views\\JobPost\\JobCreate.cshtml",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAmwF0AAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-15T11:26:40.839Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Program.cs",
-              "RelativeDocumentMoniker": "RegistrationPage\\Program.cs",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Program.cs",
-              "RelativeToolTip": "RegistrationPage\\Program.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAswCoAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-15T08:26:25.995Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Views\\Login\\Login.cshtml",
-              "RelativeDocumentMoniker": "RegistrationPage\\Views\\Login\\Login.cshtml",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Views\\Login\\Login.cshtml",
-              "RelativeToolTip": "RegistrationPage\\Views\\Login\\Login.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAADgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-15T07:55:06.309Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "RegistrationPage\\Controllers\\LoginController.cs",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "RegistrationPage\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T10:31:43.438Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "RegistrationPage\\Models\\LoginViewModel.cs",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\LoginViewModel.cs",
-              "RelativeToolTip": "RegistrationPage\\Models\\LoginViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-14T10:17:29.695Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ViewCV.cshtml",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Views\\CV\\ViewCV.cshtml",
-              "RelativeDocumentMoniker": "RegistrationPage\\Views\\CV\\ViewCV.cshtml",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Views\\CV\\ViewCV.cshtml",
-              "RelativeToolTip": "RegistrationPage\\Views\\CV\\ViewCV.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-11T10:27:09.911Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "RegistrationPage\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "RegistrationPage\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAswBsAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-11T09:24:39.715Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "AddressViewModel.cs",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\AddressViewModel.cs",
-              "RelativeDocumentMoniker": "RegistrationPage\\Models\\AddressViewModel.cs",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\AddressViewModel.cs",
-              "RelativeToolTip": "RegistrationPage\\Models\\AddressViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-11T08:34:40.316Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CVController.cs",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Controllers\\CVController.cs",
-              "RelativeDocumentMoniker": "RegistrationPage\\Controllers\\CVController.cs",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Controllers\\CVController.cs",
-              "RelativeToolTip": "RegistrationPage\\Controllers\\CVController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T12:15:24.099Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "EducationalQualificationViewModel.cs",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\EducationalQualificationViewModel.cs",
-              "RelativeDocumentMoniker": "RegistrationPage\\Models\\EducationalQualificationViewModel.cs",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\EducationalQualificationViewModel.cs",
-              "RelativeToolTip": "RegistrationPage\\Models\\EducationalQualificationViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-22T08:25:11.783Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "CVViewModel.cs",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\CVViewModel.cs",
-              "RelativeDocumentMoniker": "RegistrationPage\\Models\\CVViewModel.cs",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\CVViewModel.cs",
-              "RelativeToolTip": "RegistrationPage\\Models\\CVViewModel.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAABAAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T12:06:16.229Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AddCountry.cshtml",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Views\\Account\\AddCountry.cshtml",
-              "RelativeDocumentMoniker": "RegistrationPage\\Views\\Account\\AddCountry.cshtml",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Views\\Account\\AddCountry.cshtml",
-              "RelativeToolTip": "RegistrationPage\\Views\\Account\\AddCountry.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-04T14:46:41.81Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "AddUpazila.cshtml",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Views\\Account\\AddUpazila.cshtml",
-              "RelativeDocumentMoniker": "RegistrationPage\\Views\\Account\\AddUpazila.cshtml",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Views\\Account\\AddUpazila.cshtml",
-              "RelativeToolTip": "RegistrationPage\\Views\\Account\\AddUpazila.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-01T15:33:06.398Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "AddUpazilaViewModel.cs",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\AddUpazilaViewModel.cs",
-              "RelativeDocumentMoniker": "RegistrationPage\\Models\\AddUpazilaViewModel.cs",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\AddUpazilaViewModel.cs",
-              "RelativeToolTip": "RegistrationPage\\Models\\AddUpazilaViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T15:29:39.267Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "AddDistrictViewModel.cs",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\AddDistrictViewModel.cs",
-              "RelativeDocumentMoniker": "RegistrationPage\\Models\\AddDistrictViewModel.cs",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\AddDistrictViewModel.cs",
-              "RelativeToolTip": "RegistrationPage\\Models\\AddDistrictViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T13:51:27.058Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "AddDistrict.cshtml",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Views\\Account\\AddDistrict.cshtml",
-              "RelativeDocumentMoniker": "RegistrationPage\\Views\\Account\\AddDistrict.cshtml",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Views\\Account\\AddDistrict.cshtml",
-              "RelativeToolTip": "RegistrationPage\\Views\\Account\\AddDistrict.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-01T13:32:08.169Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AddCountryViewModel.cs",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\AddCountryViewModel.cs",
-              "RelativeDocumentMoniker": "RegistrationPage\\Models\\AddCountryViewModel.cs",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\AddCountryViewModel.cs",
-              "RelativeToolTip": "RegistrationPage\\Models\\AddCountryViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-01T13:19:43.081Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Upazila .cs",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\Entities\\Upazila .cs",
-              "RelativeDocumentMoniker": "RegistrationPage\\Models\\Entities\\Upazila .cs",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\Entities\\Upazila .cs",
-              "RelativeToolTip": "RegistrationPage\\Models\\Entities\\Upazila .cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T11:05:13.816Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "District.cs",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\Entities\\District.cs",
-              "RelativeDocumentMoniker": "RegistrationPage\\Models\\Entities\\District.cs",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\Entities\\District.cs",
-              "RelativeToolTip": "RegistrationPage\\Models\\Entities\\District.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T11:04:39.197Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Country.cs",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\Entities\\Country.cs",
-              "RelativeDocumentMoniker": "RegistrationPage\\Models\\Entities\\Country.cs",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\Entities\\Country.cs",
-              "RelativeToolTip": "RegistrationPage\\Models\\Entities\\Country.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-29T11:03:41.998Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Registration.cshtml",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Views\\Account\\Registration.cshtml",
-              "RelativeDocumentMoniker": "RegistrationPage\\Views\\Account\\Registration.cshtml",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Views\\Account\\Registration.cshtml",
-              "RelativeToolTip": "RegistrationPage\\Views\\Account\\Registration.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-12-21T12:00:44.288Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-11T09:50:14.197Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AccountController .cs",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Controllers\\AccountController .cs",
-              "RelativeDocumentMoniker": "RegistrationPage\\Controllers\\AccountController .cs",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Controllers\\AccountController .cs",
-              "RelativeToolTip": "RegistrationPage\\Controllers\\AccountController .cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T11:42:13.409Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "RegistrationViewModel.cs",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\RegistrationViewModel.cs",
-              "RelativeDocumentMoniker": "RegistrationPage\\Models\\RegistrationViewModel.cs",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\RegistrationViewModel.cs",
-              "RelativeToolTip": "RegistrationPage\\Models\\RegistrationViewModel.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAwwBEAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T11:04:14.128Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EducationalQualification.cs",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\Entities\\EducationalQualification.cs",
-              "RelativeDocumentMoniker": "RegistrationPage\\Models\\Entities\\EducationalQualification.cs",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\Entities\\EducationalQualification.cs",
-              "RelativeToolTip": "RegistrationPage\\Models\\Entities\\EducationalQualification.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T07:17:53.997Z",
-              "EditorCaption": ""
+              "Title": "EmployerRegistration.cshtml",
+              "DocumentMoniker": "D:\\BdjobsClone\\RegistrationPage\\Views\\EmployerAccount\\EmployerRegistration.cshtml",
+              "RelativeDocumentMoniker": "RegistrationPage\\Views\\EmployerAccount\\EmployerRegistration.cshtml",
+              "ToolTip": "D:\\BdjobsClone\\RegistrationPage\\Views\\EmployerAccount\\EmployerRegistration.cshtml",
+              "RelativeToolTip": "RegistrationPage\\Views\\EmployerAccount\\EmployerRegistration.cshtml",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAmwNgAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-11T09:42:32.798Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Address.cs",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\Entities\\Address.cs",
-              "RelativeDocumentMoniker": "RegistrationPage\\Models\\Entities\\Address.cs",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\Entities\\Address.cs",
-              "RelativeToolTip": "RegistrationPage\\Models\\Entities\\Address.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAsAAAAAAAAAAAAAAA==",
+              "Title": "EmployerAccountController.cs",
+              "DocumentMoniker": "D:\\BdjobsClone\\RegistrationPage\\Controllers\\EmployerAccountController.cs",
+              "RelativeDocumentMoniker": "RegistrationPage\\Controllers\\EmployerAccountController.cs",
+              "ToolTip": "D:\\BdjobsClone\\RegistrationPage\\Controllers\\EmployerAccountController.cs",
+              "RelativeToolTip": "RegistrationPage\\Controllers\\EmployerAccountController.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAgwBYAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T07:16:28.477Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T06:20:12.243Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "BaseEntity.cs",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\Entities\\BaseEntity.cs",
-              "RelativeDocumentMoniker": "RegistrationPage\\Models\\Entities\\BaseEntity.cs",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\Entities\\BaseEntity.cs",
-              "RelativeToolTip": "RegistrationPage\\Models\\Entities\\BaseEntity.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T07:13:42.887Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CreateAccount.cs",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\Entities\\CreateAccount.cs",
-              "RelativeDocumentMoniker": "RegistrationPage\\Models\\Entities\\CreateAccount.cs",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Models\\Entities\\CreateAccount.cs",
-              "RelativeToolTip": "RegistrationPage\\Models\\Entities\\CreateAccount.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAuwBEAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-21T07:11:59.063Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 4,
               "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Data\\ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\BdjobsClone\\RegistrationPage\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "RegistrationPage\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\Registration Page Project\\RegistrationPage\\RegistrationPage\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\BdjobsClone\\RegistrationPage\\Data\\ApplicationDbContext.cs",
               "RelativeToolTip": "RegistrationPage\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAgwBMAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-19T10:39:00.141Z"
+              "WhenOpened": "2025-03-10T06:19:23.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "JobPost.cs",
+              "DocumentMoniker": "D:\\BdjobsClone\\RegistrationPage\\Models\\Entities\\JobPost.cs",
+              "RelativeDocumentMoniker": "RegistrationPage\\Models\\Entities\\JobPost.cs",
+              "ToolTip": "D:\\BdjobsClone\\RegistrationPage\\Models\\Entities\\JobPost.cs",
+              "RelativeToolTip": "RegistrationPage\\Models\\Entities\\JobPost.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwBoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T06:18:36.794Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Employer.cs",
+              "DocumentMoniker": "D:\\BdjobsClone\\RegistrationPage\\Models\\Entities\\Employer.cs",
+              "RelativeDocumentMoniker": "RegistrationPage\\Models\\Entities\\Employer.cs",
+              "ToolTip": "D:\\BdjobsClone\\RegistrationPage\\Models\\Entities\\Employer.cs",
+              "RelativeToolTip": "RegistrationPage\\Models\\Entities\\Employer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T06:18:29.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "JobPostController.cs",
+              "DocumentMoniker": "D:\\BdjobsClone\\RegistrationPage\\Controllers\\JobPostController.cs",
+              "RelativeDocumentMoniker": "RegistrationPage\\Controllers\\JobPostController.cs",
+              "ToolTip": "D:\\BdjobsClone\\RegistrationPage\\Controllers\\JobPostController.cs",
+              "RelativeToolTip": "RegistrationPage\\Controllers\\JobPostController.cs",
+              "ViewState": "AgIAAOYAAAAAAAAAAAAmwMIAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T10:24:50.966Z",
+              "EditorCaption": ""
             }
           ]
         }
